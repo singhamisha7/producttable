@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Form Table -->
+      <table class="details">
+        <tr>
+          <td><label for="ProductId">Product Id</label></td>
+          <td><input type="text" id="ProductId" value=""/></td>
+          <td id="ProductIdError"></td>
+        </tr>
+        <tr>
+          <td><label for="ProductName">Product Name</label></td>
+          <td><input type="text" id="ProductName" value=""></td>
+          <td id="ProductNameError"></td>
+        </tr>
+        <tr>
+            <td><label for="ProductPrice">Product Price</label></td>
+            <td><input type="number" id="ProductPrice" value=""></td>
+            <td id="ProductPriceError"></td>
+        </tr>
+      </table>
+      <div class="btn" onclick="addProduct()">ADD PRODUCT</div>
+      <!-- Result Table -->
+      <table class="result">
+        <!-- Table Head -->
+        <tr>
+            <th> Product Id</th>
+            <th> Product Name</th>
+            <th> Product Price</th>
+        </tr>
+        <!-- Table Body -->
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
